@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #343434;
+    --sec-color: #f8f9fa;
+    --third-color: #1c1c1c;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 58px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+}
+
+/*=================== GENERAL ======================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+i {
+    list-style: none;
+}
+
+/*=================== NAV BAR ======================*/
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-collapse ul li {
+    text-align: center;
+}
+
+.navbar .space {
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+    font-size: 14px;
+    position: relative;
+    padding-block: 0;
+    padding-inline: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #487d9bc5;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+
+}
+
+
+/*=================== HOME SEC ======================*/
+
+header.home {
+    background-image: linear-gradient(rgba(7, 40, 53, 0.6), rgba(51, 49, 50, 0.6)), url(./imgs/elegant-desk-arrangement-with-macarons.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.home h4 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header.home a {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+header.home a:hover {
+    color: rgb(2, 2, 2);
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+header.home h2 {
+    font-size: 50px;
+}
+
+/*=================== ABOUT SEC ======================*/
+
+.about {
+    padding-block: 6.25rem;
+}
+
+.about .container .pic {
+    position: relative;
+    padding-left: 30px;
+    width: 95%;
+}
+
+.pic img{
+    border-radius: 40%;
+}
+
+.about .container .pic::before {
+    content: "";
+    position: absolute;
+    background-image: url(./imgs/dots.png);
+    width: 80%;
+    height: 80%;
+    bottom: -30px;
+    left: 0px;
+    z-index: -1;
+}
+
+.about .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about .details {
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+    font-size: 15px;
+}
+
+.about .about-progres .progress {
+    box-shadow: 0px 0px 7px rgba(160, 48, 141, 0.2);
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.progress-bar{
+    background-color: #487d9bc5;
+}
+
+.about .btn {
+    font-size: 15px;
+}
+
+.down:hover {
+    color: black;
+    background-color: white;
+}
+
+/*=================== SERVICES SEC ======================*/
+
+.services {
+    padding-block: 6.25rem;
+    background: #f7f7f7;
+}
+
+.services .box-service p {
+    font-size: 15px;
+    word-spacing: 2px;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.services .box-service i {
+    background: #f4f4f4;
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+    display: inline-flex !important;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .box-service:hover i {
+    background-color: rgb(183, 119, 199);
+    color: #fff;
+    cursor: pointer;
+}
+
+/*=================== WORKS SEC ======================*/
+
+.portfolio {
+    padding-block: 6.25rem;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+.portfolio .nav-tabs .nav-link.active {
+    color: #222;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: transparent;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    position: relative;
+}
+
+.nav-tabs .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height:2px;
+    background-color: #000;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-tabs .nav-link {
+    border-top: 0;
+    border-bottom: 0;
+    border: 0;
+}
+
+.nav-tabs .nav-link.active::after {
+    width: 100%;
+}
+
+.cont-portfolio .tab-content .tab-pane .item .headers i{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: 12px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center; 
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-portfolio .tab-content .tab-pane .item .headers i:hover{
+    border-color: #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.portfolio .item:hover .headers {
+    top: 50%;  
+}
+
+.portfolio .item .headers {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.5s ease;
+    z-index: 1;
+}
+
+.portfolio .item::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    right: 5px;
+    bottom: 15px;
+    background: rgba(255, 255, 255, 0.95) !important; 
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    
+}
+
+.portfolio .item:hover::after {
+    opacity: 1;  
+}
+
+/*=================== CONTACT SEC ======================*/
+
+.contact {
+    padding-block: 6.25rem;
+}
+
+.contact .contact-info i {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.contact .contact-info .details-contact:hover i {
+    background: #ccb577;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.contact .details-contact p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+
+/*=================== FOOTER SEC ======================*/
+
+footer {
+    background-color: var(--third-color);
+    padding: 30px;
+}
+
+footer p {
+    font-size: 14px;
+    word-spacing: 1px;
+}
