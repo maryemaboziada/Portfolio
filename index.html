@@ -1,416 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Portfolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Portfolio</title>
+    </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy">
+    <body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy">
 
-    <!--============================ NAV BAR =================================-->  
+        <!--============================ NAV BAR =================================-->
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-scrollspy">
-        <div class="container">
-          <a class="navbar-brand text-uppercase" href="#">Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-
-    <!--============================ HEADER SEC =================================-->  
-
-    <header id="home" class="home min-vh-100 d-flex justify-content-center align-items-center">
-        <div class="content text-white text-center mt-4">
-            <h4 class="fw-bolder">Hello...</h4>
-            <h2 class="fw-lighter d-flex flex-wrap justify-content-center mt-4 p-1">I Am &nbsp; <span id="element"></span> </h2>
-            <div class="social-links d-flex gap-1 justify-content-center mt-5">
-                <a href="https://www.linkedin.com/in/maryem-aboziada-78b5a621b/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in fa-xs"></i>
-                </a>
-                <a href="https://github.com/maryemaboziada" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!--============================ MAIN BODY ================================-->  
-
-    <main>
-
-        <!--============================ ABOUT SEC =================================-->  
-
-        <section id="about" class="about" >
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar-scrollspy">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        <div class="pic">
-                            <img src="./imgs/me.jpeg" alt="about" class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 mt-1 pt-5">
-                        <h3 class="mb-0 fw-bold">About Me</h3>
-                        <span class="sub-title ">WEB DEVELOPER</span>
-                        <p class="my-4 details">
-                            I am  <strong>Maryem Aboziada</strong> I am a dedicated front-end developer 
-                            with a keen eye for design and a commitment to delivering seamless user experiences.
-                            My journey in web development has equipped me with the ability to balance 
-                            aesthetics and functionality, ensuring that every project I work on not only 
-                            looks great but also performs flawlessly across all devices.
-                        </p>
-    
-                        <div class="about-progres mb-5">
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 80%">
-                                    <span>Javascript</span>
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 100%">
-                                    <span>HTML</span>
-                                    <span>100%</span>
-                                </div>
-                            </div>
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 90%">
-                                    <span>CSS</span>
-                                    <span>90%</span>
-                                </div>
-                            </div>
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 85%">
-                                    <span>Bootstrap</span>
-                                    <span>85%</span>
-                                </div>
-                            </div>
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 60%">
-                                    <span>Tailwind</span>
-                                    <span>60%</span>
-                                </div>
-                            </div>
-                            <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
-                                    style="width: 30%">
-                                    <span>Angular</span>
-                                    <span>30%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-button d-flex gap-2 flex-wrap">
-                            <a href="#" download class="btn btn-dark down">Download C.V</a>
-                            <a href="#" class="btn btn-outline-dark">Contact Me</a>
-                        </div>
-                    </div>
+                <a class="navbar-brand text-uppercase" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-        </section>
+        <!--============================ HEADER SEC =================================-->
 
-        <!--============================ SERVICES SEC ================================-->  
-
-        <section id="services" class="services">
-            <div class="container text-center">
-                <div class="title text-center">
-                    <h2 class="fs-1 mx-auto mb-5">Services.</h2>
+        <header id="home" class="home min-vh-100 d-flex justify-content-center align-items-center">
+            <div class="content text-white text-center mt-4">
+                <h4 class="fw-bolder">Hello...</h4>
+                <h2 class="fw-lighter d-flex flex-wrap justify-content-center mt-4 p-1">I Am &nbsp; <span
+                        id="element"></span> </h2>
+                <div class="social-links d-flex gap-1 justify-content-center mt-5">
+                    <a href="https://www.linkedin.com/in/maryem-aboziada-78b5a621b/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-xs"></i>
+                    </a>
+                    <a href="https://github.com/maryemaboziada" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
-                <div class="row services-info ">
+            </div>
+        </header>
 
-                    <div class=" col-md-4 text-center mb-5 ">
-                        <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
-                            <i class="fa-solid fa-laptop mb-4 fs-2 "></i>
-                            <h3 class="text-dark fs-5 fw-bolder"> Web Design </h3>
-                            <p class="content">Designing beautiful, 
-                                user-friendly websites with intuitive interfaces 
-                                and responsive layouts for a seamless experience.
+        <!--============================ MAIN BODY ================================-->
+
+        <main>
+
+            <!--============================ ABOUT SEC =================================-->
+
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-5 mb-5 mb-lg-0">
+                            <div class="pic">
+                                <img src="./imgs/me.jpeg" alt="about" class="w-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mt-1 pt-5">
+                            <h3 class="mb-0 fw-bold">About Me</h3>
+                            <span class="sub-title ">WEB DEVELOPER</span>
+                            <p class="my-4 details">
+                                I am <strong>Maryem Aboziada</strong> I am a dedicated front-end developer
+                                with a keen eye for design and a commitment to delivering seamless user experiences.
+                                My journey in web development has equipped me with the ability to balance
+                                aesthetics and functionality, ensuring that every project I work on not only
+                                looks great but also performs flawlessly across all devices.
                             </p>
-                        </div>
-                    </div>
-    
-                    <div class=" col-md-4 text-center mb-5 ">
-                        <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
-                            <i class="fa-solid fa-umbrella mb-4 fs-2 "></i>
-                            <h3 class=" text-dark fs-5 fw-bolder"> Development </h3>
-                            <p class="content">Developing high-performance, dynamic websites with clean code, 
-                                responsive designs, and seamless user experiences.
-                            </p>
-                        </div>
-                    </div>
-        
-                    <div class=" col-md-4 text-center mb-5 ">
-                        <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
-                            <i class="fa-solid fa-television mb-4 fs-2 "></i>
-                            <h3 class=" text-dark fs-5 fw-bolder">Fully Responsive</h3>
-                            <p class="content">Creating fully responsive websites that ensure seamless 
-                                user experiences across all devices and screen sizes.
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-        </section>
 
-        <!--============================ WORKS SEC =================================-->  
-
-        <section id="works" class="portfolio">
-
-            <div class="container">
-                <div class="title text-center">
-                    <h2 class="fs-1 mx-auto mb-5">Portfolio.</h2>
-                </div>
-
-                <div class="row cont-portfolio">
-    
-                <ul class="nav nav-tabs justify-content-center my-3" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active fw-bolder" id="all-tab" data-bs-toggle="tab"
-                            data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
-                            aria-selected="true">All
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bolder text-dark" id="brand-tab" data-bs-toggle="tab"
-                            data-bs-target="#brand-tab-pane" type="button" role="tab" aria-controls="brand-tab-pane"
-                            aria-selected="false">Brand
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bolder text-dark" id="design-tab" data-bs-toggle="tab"
-                            data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane"
-                            aria-selected="false">Design
-                        </button>
-                    </li>
-                </ul>
-
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-                        <div class="row m-5 g-3">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/bookstore.jpg" alt="books" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Book Store Landing page</h5>
-                                            <a href="" target="_blank" ><i class="fa fa-chain-broken"></i></a>      
+                            <div class="about-progres mb-5">
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 80%">
+                                        <span>Javascript</span>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 100%">
+                                        <span>HTML</span>
+                                        <span>100%</span>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 90%">
+                                        <span>CSS</span>
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 85%">
+                                        <span>Bootstrap</span>
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 60%">
+                                        <span>Tailwind</span>
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4 rounded-1" role="progressbar" aria-label="Basic example"
+                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar rounded-1 justify-content-between align-items-center flex-row px-2"
+                                        style="width: 30%">
+                                        <span>Angular</span>
+                                        <span>30%</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/portfolio.jpeg" alt="Portfolio" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Danials</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank" ><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/AI.jpg" alt="AI model" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>DR EMO</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/database.jpg" alt="cloud data" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Database</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank" ><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/tourism.jpeg" alt="pyramids" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Let's travel to Egypt</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/devolio.jpg" alt="portfolio" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Devolio</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>            
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="brand-tab-pane" role="tabpanel" aria-labelledby="brand-tab" tabindex="0">
-                        <div class="row m-5 g-3">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/AI.jpg" alt="AI model" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>DR EMO</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/tourism.jpeg" alt="pyramids" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Let's travel to Egypt</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="about-button d-flex gap-2 flex-wrap">
+                                <a href="#" download class="btn btn-dark down">Download C.V</a>
+                                <a href="#" class="btn btn-outline-dark">Contact Me</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
-                        <div class="row m-5 g-3">
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/bookstore.jpg" alt="books" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Book Store Landing page</h5>
-                                            <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>     
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 col-md-6">
-                                <div class="item position-relative overflow-hidden">
-                                    <img src="./imgs/portfolio/database.jpg" alt="cloud data" class="w-100">
-                                    <div class="headers text-center">
-                                        <h5>Database</h5>
-                                        <div class="links-icon">
-                                            <a href="" target="_blank" ><i class="fa fa-chain-broken"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </section>
-
-        <!--============================ CONTACT SEC =================================-->  
-
-        <section id="contact" class="contact" >
-            <div class="container text-center">
-                <div class="title text-center">
-                    <h2 class="fs-1 mx-auto mb-5">Contact Me.</h2>
-                </div>
-    
-                <div class="contact-info row mb-5 gy-3">
-                    <div class="col-lg-4 details-contact">
-                        <i class="fa-solid fa-location-arrow mb-3"></i>
-                        <h5 class="fw-bold">Address</h5>
-                        <p class="text-secondary">Giza-Haram</p>
-                    </div>
-                    
-                    <div class="col-lg-4 details-contact">
-                        <i class="fa-solid fa-envelope mb-3"></i>
-                        <h5 class="fw-bold">Email</h5>
-                        <p class="text-secondary">maryemaboziada@gmail.com</p>
-                    </div>
-                    
-                    <div class="col-lg-4 details-contact">
-                        <i class="fa-solid fa-phone mb-3"></i>
-                        <h5 class="fw-bold">Phone</h5>
-                        <p class="text-secondary ">+20 011 4488 3217</p>
                     </div>
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <!--============================ FOOTER SEC =================================-->  
+            <!--============================ SERVICES SEC ================================-->
 
-        <footer class="footer py-4 text-secondary" id="footer">
-            <div class="container text-center">
-                <p class="mb-0 p-2">Copy Right 2024 © By Maryem Aboziada All Rights Reserved</p>
-            </div>
-        </footer>
+            <section id="services" class="services">
+                <div class="container text-center">
+                    <div class="title text-center">
+                        <h2 class="fs-1 mx-auto mb-5">Services.</h2>
+                    </div>
+                    <div class="row services-info ">
 
-    </main>
+                        <div class=" col-md-4 text-center mb-5 ">
+                            <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
+                                <i class="fa-solid fa-laptop mb-4 fs-2 "></i>
+                                <h3 class="text-dark fs-5 fw-bolder"> Web Design </h3>
+                                <p class="content">Designing beautiful,
+                                    user-friendly websites with intuitive interfaces
+                                    and responsive layouts for a seamless experience.
+                                </p>
+                            </div>
+                        </div>
 
-    <!--============================ JS LINKS =================================-->  
+                        <div class=" col-md-4 text-center mb-5 ">
+                            <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
+                                <i class="fa-solid fa-umbrella mb-4 fs-2 "></i>
+                                <h3 class=" text-dark fs-5 fw-bolder"> Development </h3>
+                                <p class="content">Developing high-performance, dynamic websites with clean code,
+                                    responsive designs, and seamless user experiences.
+                                </p>
+                            </div>
+                        </div>
 
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Maryem Aboziada', 'Developer'],
-          typeSpeed: 30,
-          backSpeed: 40,
-          loop: true,
-          loopCount: Infinity,
-        });
-    </script>
- 
-</body>
+                        <div class=" col-md-4 text-center mb-5 ">
+                            <div class="box-service py-5 px-4 bg-white shadow rounded-2 ">
+                                <i class="fa-solid fa-television mb-4 fs-2 "></i>
+                                <h3 class=" text-dark fs-5 fw-bolder">Fully Responsive</h3>
+                                <p class="content">Creating fully responsive websites that ensure seamless
+                                    user experiences across all devices and screen sizes.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--============================ WORKS SEC =================================-->
+
+            <section id="works" class="portfolio">
+
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="fs-1 mx-auto mb-5">Portfolio.</h2>
+                    </div>
+
+                    <div class="row cont-portfolio">
+
+                        <ul class="nav nav-tabs justify-content-center my-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bolder" id="all-tab" data-bs-toggle="tab"
+                                    data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
+                                    aria-selected="true">All
+                                </button>
+                            </li>
+                            <!-- <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bolder text-dark" id="brand-tab" data-bs-toggle="tab"
+                                    data-bs-target="#brand-tab-pane" type="button" role="tab"
+                                    aria-controls="brand-tab-pane" aria-selected="false">Brand
+                                </button>
+                            </li> -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bolder text-dark" id="design-tab" data-bs-toggle="tab"
+                                    data-bs-target="#design-tab-pane" type="button" role="tab"
+                                    aria-controls="design-tab-pane" aria-selected="false">Design
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                                aria-labelledby="all-tab" tabindex="0">
+                                <div class="row m-5 g-3">
+                                    
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/portfolio.jpeg" alt="Portfolio" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Danials</h5>
+                                                <div class="links-icon">
+                                                    <a href="https://maryemaboziada.github.io/Danials/" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/bookstore.jpg" alt="books" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Book Store Landing page</h5>
+                                                <div class="links-icon">
+                                                    <a href="https://maryemaboziada.github.io/Book-store/" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/AI.jpg" alt="AI model" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>DR EMO</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/database.jpg" alt="cloud data" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Database</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/tourism.jpeg" alt="pyramids" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Let's travel to Egypt</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/devolio.jpg" alt="portfolio" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Devolio</h5>
+                                                <div class="links-icon">
+                                                    <a href="https://maryemaboziada.github.io/DevFolio/" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="tab-pane fade" id="brand-tab-pane" role="tabpanel" aria-labelledby="brand-tab"
+                                tabindex="0">
+                                <div class="row m-5 g-3">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/AI.jpg" alt="AI model" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>DR EMO</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/tourism.jpeg" alt="pyramids" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Let's travel to Egypt</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="tab-pane fade" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab"
+                                tabindex="0">
+                                <div class="row m-5 g-3">
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/bookstore.jpg" alt="books" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Book Store Landing page</h5>
+                                                <a href="https://maryemaboziada.github.io/Book-store/"
+                                                    target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="item position-relative overflow-hidden">
+                                            <img src="./imgs/portfolio/database.jpg" alt="cloud data" class="w-100">
+                                            <div class="headers text-center">
+                                                <h5>Database</h5>
+                                                <div class="links-icon">
+                                                    <a href="" target="_blank"><i class="fa fa-chain-broken"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!--============================ CONTACT SEC =================================-->
+
+            <section id="contact" class="contact">
+                <div class="container text-center">
+                    <div class="title text-center">
+                        <h2 class="fs-1 mx-auto mb-5">Contact Me.</h2>
+                    </div>
+
+                    <div class="contact-info row mb-5 gy-3">
+                        <div class="col-lg-4 details-contact">
+                            <i class="fa-solid fa-location-arrow mb-3"></i>
+                            <h5 class="fw-bold">Address</h5>
+                            <p class="text-secondary">Giza-Haram</p>
+                        </div>
+
+                        <div class="col-lg-4 details-contact">
+                            <i class="fa-solid fa-envelope mb-3"></i>
+                            <h5 class="fw-bold">Email</h5>
+                            <p class="text-secondary">maryemaboziada@gmail.com</p>
+                        </div>
+
+                        <div class="col-lg-4 details-contact">
+                            <i class="fa-solid fa-phone mb-3"></i>
+                            <h5 class="fw-bold">Phone</h5>
+                            <p class="text-secondary ">+20 011 4488 3217</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--============================ FOOTER SEC =================================-->
+
+            <footer class="footer py-4 text-secondary" id="footer">
+                <div class="container text-center">
+                    <p class="mb-0 p-2">Copy Right 2024 © By Maryem Aboziada All Rights Reserved</p>
+                </div>
+            </footer>
+
+        </main>
+
+        <!--============================ JS LINKS =================================-->
+
+        <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Maryem Aboziada', 'Developer'],
+                typeSpeed: 30,
+                backSpeed: 40,
+                loop: true,
+                loopCount: Infinity,
+            });
+        </script>
+
+    </body>
 
 </html>
